@@ -3,8 +3,11 @@ from setuptools import setup, find_packages
 
 with open('requirements.txt') as f:
     required = f.read().splitlines()
-description = 'Now with us, dealing with Arabic texts has become easy, and in the future it will become easier with us'
-ver = '0.5'
+
+with open('README.md', encoding='utf-8') as f:
+    long_description = f.read()
+
+ver = '0.6'
 
 
 setup(
@@ -13,8 +16,8 @@ setup(
     install_requires=required,
     tests_require=['pytest'],
     author="AbdelrahmanShahrour",
-    long_description=description,
-    long_description_content_type='text/x-rst',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/AbdelrahmanShahrour/PyShawpack',
     keywords=['NLP', 'text-data', 'AI', 'DS', 'Shahrour', 'arabic-py', 'arabic-nlp'],
     description="SHAWPACK NLP processing package",

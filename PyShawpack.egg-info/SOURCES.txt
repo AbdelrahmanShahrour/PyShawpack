@@ -3,6 +3,7 @@ README.md
 setup.py
 PyShawpack/Normalization.py
 PyShawpack/Processor.py
+PyShawpack/TweetsCleaner.py
 PyShawpack/__init__.py
 PyShawpack/ar.py
 PyShawpack/en.py

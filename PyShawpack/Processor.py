@@ -107,7 +107,7 @@ class Arabic_Processor:
         '''
         text = text.split(' ')
         words = [word for word in text if word not in stop_word_ar]
-        output = ''.join(words)
+        output = ' '.join(words)
         return output
     
     def remove_other_lang(text : str) -> str:

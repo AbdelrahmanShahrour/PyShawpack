@@ -4,33 +4,37 @@ from PyShawpack.ar import *
 from PyShawpack.en import *
 from PyShawpack.general import *
 
-
 class Normalization_ar:
     def alef(text:str) -> str:
         for tam in ALEF_CHARS:
-            output = text.replace(tam, NORMAL_ALEF)
-        return output
+            text = text.replace(tam, NORMAL_ALEF)
+        return text
 
     def lamalef(text:str) -> str:
         for tam in LAM_ALEF_COMBINED:
-            output = text.replace(tam, LAM_ALEF_NORMAL)
-        return output
+            text = text.replace(tam, LAM_ALEF_NORMAL)
+        return text
 
     def hamza(text:str) -> str:
         for tam in HAMZA_CHARS:
-            output = text.replace(tam, NORMAL_HAMZA)
-        return output
+            print(tam)
+            text = text.replace(tam, NORMAL_HAMZA)
+            print(text)
+        return text
 
     
     def tah(text:str) -> str:
-        output = text.replace(TAH_MARBOTA, HA)
-        return output
+        text = text.replace(TAH_MARBOTA, HA)
+        return text
 
 
     def madah(text:str) -> str:
-        output = text.replace(TATWEEL, "")
-        return output
+        text = text.replace(TATWEEL, "")
+        return text
     
     def normalization_all(text:str) -> str:
-        output = alef(text).lamalef(text).hamza(text).tah_marbota(text)
-        return output
+        text = Normalization_ar.alef(text)
+        text = Normalization_ar.lamalef(text)
+        text = Normalization_ar.hamza(text)
+        text = Normalization_ar.tah(text)
+        return text
