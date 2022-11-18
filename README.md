@@ -6,7 +6,7 @@
 ## Installation
 
 ```python
-pip3 install PyShawpack==0.5
+pip3 install PyShawpack==0.6
 ```
 ---
 ## Structure 
@@ -76,35 +76,19 @@ pip3 install PyShawpack==0.5
 ## Example:
 
 ```python
-pip3 install PyShawpack==0.5
+pip3 install PyShawpack==0.6
 ```
 
 ```python
-from PyShawpack.Processor import Arabic_Processor
-from PyShawpack.Processor import General_Processor
-from PyShawpack.Normalization import Normalization_ar
-```
-
-```python
-def clean_tweet(tweet):
-    tweet = General_Processor.remove_emojis(tweet)
-    tweet = General_Processor.remove_hasgtag(tweet)
-    tweet = General_Processor.remove_links(tweet)
-    tweet = General_Processor.remove_mentions(tweet)
-    tweet = General_Processor.remove_whitespace(tweet)
-    tweet = General_Processor.remove_whitespace(tweet)
-    tweet = Arabic_Processor.remove_arabic_punctuations(tweet)
-    tweet = Arabic_Processor.remove_diacritics(tweet)
-    tweet = Arabic_Processor.remove_other_lang(tweet)
-    return tweet
+from PyShawpack.Normalization import TweetsCleaner as clean
 ```
 
 
+
 ```python
-text = 'akhhh !تَوقَعْت اذا جات داريا بشوفهم كاملين بس لي للحين احس فيه احد ناقْصهم 💔 #Avlu https://www.messenger.com/ @pyshawpack '
+text = 'akhhh !تَوقَعْت إذا جات داريا بشوفهم كاملين بس لي للحين احس فيه احد ناقْصهم 💔 #Avlu https://www.messenger.com/ @pyshawpack '
 
-clean_tweet(text)
-
+clean.Clean_tweet.ar(text)
 ```
 
 output:
