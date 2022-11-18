@@ -14,7 +14,7 @@ class Clean_tweet:
         tweet = Arabic_Processor.remove_arabic_punctuations(tweet)
         tweet = Arabic_Processor.remove_diacritics(tweet)
         tweet = Arabic_Processor.remove_other_lang(tweet)
-        if Normalize_all == "Yes"
+        if Normalize_all == "Yes":
             tweet = Normalization_ar.normalization_all(tweet)
         tweet = General_Processor.remove_emojis(tweet)
         return tweet
