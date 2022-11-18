@@ -70,3 +70,43 @@ pip3 install PyShawpack==0.5
 |---------|---------| ------> | remove_emojis
 
 |---------|---------| ------> | remove_whitespace
+
+---
+
+## Example:
+
+```python
+pip3 install PyShawpack==0.5
+```
+
+```python
+from PyShawpack.Processor import Arabic_Processor
+from PyShawpack.Processor import General_Processor
+from PyShawpack.Normalization import Normalization_ar
+```
+
+```python
+def clean_tweet(tweet):
+    tweet = General_Processor.remove_emojis(tweet)
+    tweet = General_Processor.remove_hasgtag(tweet)
+    tweet = General_Processor.remove_links(tweet)
+    tweet = General_Processor.remove_mentions(tweet)
+    tweet = General_Processor.remove_whitespace(tweet)
+    tweet = General_Processor.remove_whitespace(tweet)
+    tweet = Arabic_Processor.remove_arabic_punctuations(tweet)
+    tweet = Arabic_Processor.remove_diacritics(tweet)
+    tweet = Arabic_Processor.remove_other_lang(tweet)
+    return tweet
+```
+
+
+```python
+text = 'akhhh !تَوقَعْت اذا جات داريا بشوفهم كاملين بس لي للحين احس فيه احد ناقْصهم 💔 #Avlu https://www.messenger.com/ @pyshawpack '
+
+clean_tweet(text)
+
+```
+
+output:
+`' توقعت اذا جات داريا بشوفهم كاملين بس لي للحين احس فيه احد ناقصهم '
+`
