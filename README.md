@@ -13,9 +13,9 @@ pip3 install PyShawpack==0.2
 
 |> PyShawpack
 
-| ------> | Normalization
+| ------> | `Normalization`
 
-|---------| ------> | Normalization_ar
+|---------| ------> | `Normalization_ar`
 
 |---------|---------| ------> | alef
 
@@ -29,9 +29,9 @@ pip3 install PyShawpack==0.2
 
 |---------|---------| ------> | normalization_all
 
-| ------> Processor
+| ------> `Processor`
 
-|---------| ------> | Arabic_Processor
+|---------| ------> | `Arabic_Processor`
 
 |---------|---------| ------> | remove_stopword
 
@@ -45,7 +45,7 @@ pip3 install PyShawpack==0.2
 
 |---------|---------| ------> | with_out_num
 
-|---------| ------> | English_Processor
+|---------| ------> | `English_Processor`
 
 |---------|---------| ------> | remove_stopword
 
@@ -55,7 +55,7 @@ pip3 install PyShawpack==0.2
 
 |---------|---------| ------> | with_out_num
 
-|---------| ------> | General_Processor
+|---------| ------> | `General_Processor`
 
 |---------|---------| ------> | remove_mentions
 
