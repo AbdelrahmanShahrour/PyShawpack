@@ -80,7 +80,7 @@ pip3 install PyShawpack==0.6
 ```
 
 ```python
-from PyShawpack.Normalization import TweetsCleaner as clean
+from PyShawpack.TweetsCleaner import Clean_tweet
 ```
 
 
@@ -88,7 +88,7 @@ from PyShawpack.Normalization import TweetsCleaner as clean
 ```python
 text = 'akhhh !تَوقَعْت إذا جات داريا بشوفهم كاملين بس لي للحين احس فيه احد ناقْصهم 💔 #Avlu https://www.messenger.com/ @pyshawpack '
 
-clean.Clean_tweet.ar(text)
+Clean_tweet.ar(text)
 ```
 
 output:
