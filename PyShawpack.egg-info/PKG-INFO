@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyShawpack
+Version: 0.5
+Summary: SHAWPACK NLP processing package
+Home-page: https://github.com/AbdelrahmanShahrour/PyShawpack
+Author: AbdelrahmanShahrour
+License: UNKNOWN
+Keywords: NLP,text-data,AI,DS,Shahrour,arabic-py,arabic-nlp
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+Now with us, dealing with Arabic texts has become easy, and in the future it will become easier with us
+

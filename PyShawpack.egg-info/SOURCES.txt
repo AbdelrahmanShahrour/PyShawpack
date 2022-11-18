@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+PyShawpack/Normalization.py
+PyShawpack/Processor.py
+PyShawpack/__init__.py
+PyShawpack/ar.py
+PyShawpack/en.py
+PyShawpack/general.py
+PyShawpack.egg-info/PKG-INFO
+PyShawpack.egg-info/SOURCES.txt
+PyShawpack.egg-info/dependency_links.txt
+PyShawpack.egg-info/requires.txt
+PyShawpack.egg-info/top_level.txt
