@@ -6,7 +6,7 @@
 ## Installation
 
 ```python
-pip3 install PyShawpack==0.2
+pip3 install PyShawpack==0.5
 ```
 ---
 ## Structure 
